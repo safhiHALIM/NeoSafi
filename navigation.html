@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoSafi - Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nav-card {
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .nav-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--purple-color));
+            color: white;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">
+                <i class="fas fa-rocket me-3"></i>
+                NeoSafi Platform
+            </h1>
+            <p class="lead">Choose your destination</p>
+        </div>
+    </div>
+
+    <!-- Navigation Cards -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Main Application -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card nav-card h-100">
+                    <div class="card-body text-center">
+                        <div class="nav-icon text-primary">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4 class="card-title">Main Application</h4>
+                        <p class="card-text">
+                            Complete landing page with all features, animations, and payment system.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-success me-2">Production Ready</span>
+                            <span class="badge bg-info">Full Features</span>
+                        </div>
+                        <a href="index.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-arrow-right me-2"></i>
+                            Launch App
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Administration -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card nav-card h-100">
+                    <div class="card-body text-center">
+                        <div class="nav-icon text-warning">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4 class="card-title">Administration</h4>
+                        <p class="card-text">
+                            Secure admin panel with dashboard, user management, and analytics.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-warning me-2">Secure</span>
+                            <span class="badge bg-secondary">Admin Only</span>
+                        </div>
+                        <a href="admin/" class="btn btn-warning btn-lg">
+                            <i class="fas fa-lock me-2"></i>
+                            Admin Access
+                        </a>
+                        <div class="mt-2">
+                            <small class="text-muted">
+                                <strong>Login:</strong> neosafiadmin / neosafi2024
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Test Suite -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card nav-card h-100">
+                    <div class="card-body text-center">
+                        <div class="nav-icon text-success">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4 class="card-title">Test Suite</h4>
+                        <p class="card-text">
+                            Comprehensive testing tools for modules, payments, and admin functions.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-success me-2">Testing</span>
+                            <span class="badge bg-info">Debug Tools</span>
+                        </div>
+                        <a href="tests/" class="btn btn-success btn-lg">
+                            <i class="fas fa-play me-2"></i>
+                            Run Tests
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-link me-2"></i>
+                            Quick Access Links
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 mb-2">
+                                <a href="index.html" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-home me-2"></i>Landing Page
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="admin/admin-login.html" class="btn btn-outline-warning w-100">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Admin Login
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="tests/test-modules.html" class="btn btn-outline-success w-100">
+                                    <i class="fas fa-cogs me-2"></i>Module Tests
+                                </a>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <a href="tests/test-payment.html" class="btn btn-outline-info w-100">
+                                    <i class="fas fa-credit-card me-2"></i>Payment Tests
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Structure -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-folder-tree me-2"></i>
+                            Project Structure
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6><i class="fas fa-folder me-2 text-primary"></i>Root</h6>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-file me-2 text-success"></i>index.html</li>
+                                    <li><i class="fas fa-file me-2 text-info"></i>style.css</li>
+                                    <li><i class="fas fa-file me-2 text-warning"></i>script.js</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6><i class="fas fa-folder me-2 text-warning"></i>admin/</h6>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-file me-2 text-success"></i>admin-login.html</li>
+                                    <li><i class="fas fa-file me-2 text-success"></i>admin-dashboard.html</li>
+                                    <li><i class="fas fa-file me-2 text-info"></i>admin-login-fixed.html</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6><i class="fas fa-folder me-2 text-success"></i>tests/</h6>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-file me-2 text-success"></i>test-modules.html</li>
+                                    <li><i class="fas fa-file me-2 text-success"></i>test-payment.html</li>
+                                    <li><i class="fas fa-file me-2 text-info"></i>test-admin-login.html</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">
+                <i class="fas fa-code me-2"></i>
+                NeoSafi Platform - Organized Structure
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

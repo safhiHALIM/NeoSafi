@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Design - NeoSafi</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <div id="navbar-section"></div>
+    <br>
+    <br>
+    <!-- Hero Section for Feature -->
+    <section class="hero-section d-flex align-items-center" style="min-height: 80vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content text-white">
+                        <div class="feature-icon mb-4">
+                            <i class="fas fa-mobile-alt fa-4x text-success"></i>
+                        </div>
+                        <h1 class="display-4 fw-bold mb-4">Mobile-First Design</h1>
+                        <p class="lead mb-4">
+                            Responsive design that works perfectly across all devices, ensuring optimal user experience everywhere.
+                        </p>
+                        <div class="hero-buttons">
+                               <a href="#details" class="btn btn-success btn-lg me-3 px-5">Explore Details</a>
+                        <a href="index.html" class="btn btn-outline-light btn-lg me-3 px-5">Back to Home</a>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="img/mobile.png" alt="Mobile Design" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Details Section -->
+    <section id="details" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-6 fw-bold mb-4 text-center">Mobile-First Approach</h2>
+                    
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-tablet-alt fa-2x text-success"></i>
+                                </div>
+                                <h5 class="fw-bold">Responsive Layouts</h5>
+                                <p class="text-muted">Fluid layouts that adapt seamlessly to any screen size and orientation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-tachometer-alt fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="fw-bold">Fast Loading</h5>
+                                <p class="text-muted">Optimized for speed with lazy loading and compressed assets.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-hand-pointer fa-2x text-warning"></i>
+                                </div>
+                                <h5 class="fw-bold">Touch-Friendly</h5>
+                                <p class="text-muted">Intuitive touch interactions with gesture support and haptic feedback.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card h-100 p-4">
+                                <div class="feature-icon mb-3">
+                                    <i class="fas fa-universal-access fa-2x text-info"></i>
+                                </div>
+                                <h5 class="fw-bold">Accessibility</h5>
+                                <p class="text-muted">WCAG compliant design ensuring accessibility for all users.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Device Compatibility -->
+                    <div class="bg-light p-4 rounded mb-5">
+                        <h4 class="fw-bold mb-3">Device Compatibility</h4>
+                        <div class="row text-center">
+                            <div class="col-md-3 mb-3">
+                                <i class="fas fa-mobile-alt fa-3x text-success mb-2"></i>
+                                <h6>Smartphones</h6>
+                                <small class="text-muted">iOS & Android</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <i class="fas fa-tablet-alt fa-3x text-primary mb-2"></i>
+                                <h6>Tablets</h6>
+                                <small class="text-muted">iPad & Android</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <i class="fas fa-laptop fa-3x text-warning mb-2"></i>
+                                <h6>Laptops</h6>
+                                <small class="text-muted">All Browsers</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <i class="fas fa-desktop fa-3x text-info mb-2"></i>
+                                <h6>Desktops</h6>
+                                <small class="text-muted">4K Ready</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Metrics -->
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-3 text-center">
+                            <div class="feature-card p-4">
+                                <h3 class="text-success fw-bold">98%</h3>
+                                <p class="text-muted mb-0">Mobile Score</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="feature-card p-4">
+                                <h3 class="text-primary fw-bold">&lt;2s</h3>
+                                <p class="text-muted mb-0">Load Time</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="feature-card p-4">
+                                <h3 class="text-warning fw-bold">100%</h3>
+                                <p class="text-muted mb-0">Responsive</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="feature-card p-4">
+                                <h3 class="text-info fw-bold">AAA</h3>
+                                <p class="text-muted mb-0">Accessibility</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center">
+                        <h4 class="fw-bold mb-3">Experience Mobile Excellence</h4>
+                        <p class="text-muted mb-4">Create stunning mobile experiences that engage and convert.</p>
+                        <div class="hero-buttons">
+                            <a href="contact-page.html" class="btn btn-success btn-lg me-3 px-5">Get Started</a>
+                        <a href="pricing-page.html" class="btn btn-outline-success btn-lg me-3 px-5">View Plans</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div id="footer-section"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
