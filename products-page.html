@@ -18,45 +18,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Responsive Verticale -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="img/logo/NEO SAFI LOGO DECLIN-05.png" alt="NeoSafi Logo" class="navbar-logo">
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="features-page.html">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing-page.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="products-page.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-page.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-primary ms-2 px-4" href="contact-page.html">Get Started</a>
-                    </li>
-                </ul>
+            <!-- Mobile: Header avec logo et theme toggle -->
+            <div class="navbar-header-mobile d-lg-none">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <img src="img/logo/NEO SAFI LOGO DECLIN-05.png" alt="NeoSafi Logo" class="navbar-logo">
+                </a>
                 
-                <!-- Dark Mode Toggle -->
+                <!-- Dark Mode Toggle Mobile -->
                 <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
                     <i class="fas fa-sun"></i>
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
+            
+            <!-- Desktop: Logo -->
+            <a class="navbar-brand fw-bold d-none d-lg-block" href="index.html">
+                <img src="img/logo/NEO SAFI LOGO DECLIN-05.png" alt="NeoSafi Logo" class="navbar-logo">
+            </a>
+            
+            <!-- Navigation Links avec Icônes -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-house"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features-page.html">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-text">Features</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing-page.html">
+                        <i class="fas fa-tags"></i>
+                        <span class="nav-text">Pricing</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="products-page.html">
+                        <i class="fas fa-box"></i>
+                        <span class="nav-text">Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-page.html">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary ms-2 px-4" href="contact-page.html">
+                        <i class="fas fa-rocket"></i>
+                        <span class="nav-text">Get Started</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Desktop: Dark Mode Toggle -->
+            <button class="theme-toggle d-none d-lg-flex" id="themeToggleDesktop" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
@@ -323,29 +350,11 @@
             }, 2000);
         });
 
-        // Dark mode toggle
-        const themeToggle = document.getElementById('themeToggle');
-        
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            
-            // Add animation to toggle button
-            themeToggle.style.transform = 'scale(0.9)';
-            setTimeout(() => {
-                themeToggle.style.transform = 'scale(1)';
-            }, 150);
-        });
-
         // Load products when page loads
         document.addEventListener('DOMContentLoaded', loadProducts);
     </script>
+    
+    <!-- Navbar Responsive JavaScript -->
+    <script src="js/navbar-responsive.js"></script>
 </body>
 </html>

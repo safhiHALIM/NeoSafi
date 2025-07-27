@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Navbar Mobile Verticale - NeoSafi</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Responsive Verticale -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo/NEO SAFI LOGO DECLIN-05.png" alt="NeoSafi Logo" class="navbar-logo">
+            </a>
+            
+            <!-- Navigation Links avec Icônes -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-house"></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features-page.html">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="nav-text">Features</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing-page.html">
+                        <i class="fas fa-tags"></i>
+                        <span class="nav-text">Pricing</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="products-page.html">
+                        <i class="fas fa-box"></i>
+                        <span class="nav-text">Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-page.html">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary ms-2 px-4" href="contact-page.html">
+                        <i class="fas fa-rocket"></i>
+                        <span class="nav-text">Get Started</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Test Content -->
+    <section class="py-5" style="margin-top: 120px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        🎉 Test Navbar Mobile Verticale
+                    </h1>
+                    <p class="lead mb-4">
+                        Cette page teste la nouvelle navbar responsive verticale de NeoSafi.
+                    </p>
+                    
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">✅ Fonctionnalités Testées</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li>📱 <strong>Mobile (≤767px)</strong> : Navbar verticale avec logo en haut et navigation en bas</li>
+                            <li>🖥️ <strong>Desktop (≥768px)</strong> : Navbar horizontale classique</li>
+                            <li>📍 <strong>Position fixe</strong> : Reste en haut au scroll</li>
+                            <li>🎨 <strong>Icônes</strong> : FontAwesome avec petits labels</li>
+                            <li>✨ <strong>Animations</strong> : Apparition en cascade</li>
+                            <li>🌙 <strong>Mode sombre</strong> : Toggle fonctionnel</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-6">
+                            <div class="card border-primary">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                                    <h5 class="card-title">Vue Mobile</h5>
+                                    <p class="card-text">
+                                        Réduisez la largeur de votre navigateur à moins de 768px pour voir la navbar verticale.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-success">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-desktop fa-3x text-success mb-3"></i>
+                                    <h5 class="card-title">Vue Desktop</h5>
+                                    <p class="card-text">
+                                        Sur desktop, la navbar reste horizontale avec le texte visible.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h3 class="mb-3">🔗 Pages à Tester</h3>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <a href="index.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-house me-1"></i>Home
+                            </a>
+                            <a href="features-page.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-briefcase me-1"></i>Features
+                            </a>
+                            <a href="pricing-page.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-tags me-1"></i>Pricing
+                            </a>
+                            <a href="products-page.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-box me-1"></i>Products
+                            </a>
+                            <a href="contact-page.html" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-envelope me-1"></i>Contact
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Test Content -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-4">📜 Test du Scroll</h2>
+                    <p class="text-center mb-4">
+                        Faites défiler cette page pour tester l'effet de scroll de la navbar.
+                    </p>
+                    
+                    <!-- Contenu de remplissage pour tester le scroll -->
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">🎯 Position Fixe</h5>
+                                    <p class="card-text">La navbar reste fixée en haut même lors du scroll.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">✨ Effet Scroll</h5>
+                                    <p class="card-text">L'arrière-plan devient plus opaque au scroll.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">📱 Responsive</h5>
+                                    <p class="card-text">Le comportement s'adapte à la taille d'écran.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More content for scroll testing -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="mb-4">🚀 Implémentation Réussie</h2>
+                    <p class="lead">
+                        La navbar mobile verticale est maintenant active sur toutes les pages du site NeoSafi !
+                    </p>
+                    <div class="alert alert-info">
+                        <strong>Note :</strong> Cette implémentation utilise uniquement du CSS responsive, 
+                        aucun JavaScript n'est requis pour le comportement mobile/desktop.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to light
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
